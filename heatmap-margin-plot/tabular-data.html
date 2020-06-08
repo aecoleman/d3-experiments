@@ -1,0 +1,116 @@
+<html>
+    <head>
+        <title>Sample HTML Table</title>
+        <meta charset="UTF-8">
+        <meta name="author" content="Andrew Coleman">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            tr.header-row {
+                background-color: #0ebebe;
+                font-weight: bold;
+                color: #ffffff;
+                border-bottom: 2px solid #000000;
+                padding-bottom: 2px;
+                margin-bottom: 2px;
+            }
+
+            tr.header-row > td {
+                padding-left: 5px;
+                padding-right: 5px;
+                margin-left: 5px;
+                margin-right: 5px;
+            }
+        </style>
+        <script src="../d3-libs/d3.v5.min.js"></script>
+        <script src="../d3-libs/d3-array.v2.min.js"></script>
+        <script src="../read-html-table.js"></script>
+    </head>
+    <body>
+        <table id="data-table">
+            <tr class="header-row">
+                <td>unit</td>
+                <td>task</td>
+                <td>complete</td>
+                <td>incomplete</td>
+                <td>total</td>
+            </tr>
+            <tr class="data-row">
+                <td>1</td>
+                <td>a</td>
+                <td>2</td>
+                <td>0</td>
+                <td>2</td>
+            </tr>
+            <tr class="data-row">
+                <td>2</td>
+                <td>a</td>
+                <td>3</td>
+                <td>1</td>
+                <td>4</td>
+            </tr>
+            <tr class="data-row">
+                <td>3</td>
+                <td>a</td>
+                <td>12</td>
+                <td>3</td>
+                <td>15</td>
+            </tr>
+            <tr class="data-row">
+                <td>1</td>
+                <td>b</td>
+                <td>2</td>
+                <td>1</td>
+                <td>3</td>
+            </tr>
+            <tr class="data-row">
+                <td>2</td>
+                <td>b</td>
+                <td>1</td>
+                <td>6</td>
+                <td>7</td>
+            </tr>
+            <tr class="data-row">
+                <td>3</td>
+                <td>b</td>
+                <td>3</td>
+                <td>4</td>
+                <td>7</td>
+            </tr>
+            <tr class="data-row">
+                <td>1</td>
+                <td>c</td>
+                <td>6</td>
+                <td>3</td>
+                <td>9</td>
+            </tr>
+            <tr class="data-row">
+                <td>2</td>
+                <td>c</td>
+                <td>1</td>
+                <td>0</td>
+                <td>1</td>
+            </tr>
+            <tr class="data-row">
+                <td>3</td>
+                <td>c</td>
+                <td>8</td>
+                <td>1</td>
+                <td>9</td>
+            </tr>
+            <tr class="data-row">
+                <td>2</td>
+                <td>d</td>
+                <td>0</td>
+                <td>16</td>
+                <td>16</td>
+            </tr>
+            <tr class="data-row">
+                <td>3</td>
+                <td>d</td>
+                <td>8</td>
+                <td>0</td>
+                <td>8</td>
+            </tr>
+        </table>
+    </body>
+</html>
