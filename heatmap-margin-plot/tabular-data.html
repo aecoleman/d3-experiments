@@ -26,6 +26,19 @@
         <script src="../read-html-table.js"></script>
     </head>
     <body>
+        <script type="text/javascript">
+            var heatmapData = [];
+            document.addEventListener("DOMContentLoaded", event => { 
+                    heatmapData = readTableHTML("table#data-table", d => {
+                                                return {unit: d.unit, 
+                                                        task: d.task, 
+                                                        complete: parseInt(d.complete), 
+                                                        incomplete: parseInt(d.incomplete), 
+                                                        total: parseInt(d.total), 
+                                                        pct: parseFloat(d.complete)/parseFloat(d.total)}});
+                }
+            );
+        </script>
         <table id="data-table">
             <tr class="header-row">
                 <td>unit</td>
